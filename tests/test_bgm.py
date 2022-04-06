@@ -164,9 +164,9 @@ class TestBgm:
             called().with_args(
                 is_in(
                     [
-                        os.path.join("/home/pi/RetroPie/music", "file1.ogg"),
-                        os.path.join("/home/pi/RetroPie/music", "file2.ogg"),
-                        os.path.join("/home/pi/RetroPie/music", "file3.ogg"),
+                        os.path.join("/home/pi/RetroPie/roms/music", "file1.ogg"),
+                        os.path.join("/home/pi/RetroPie/roms/music", "file2.ogg"),
+                        os.path.join("/home/pi/RetroPie/roms/music", "file3.ogg"),
                     ]
                 )
             ),

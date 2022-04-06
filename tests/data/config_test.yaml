@@ -2,11 +2,11 @@
 startdelay: 0
 
 # The directory where you will place your music in .mp3 or .ogg format
-musicdir: /home/pi/RetroPie/music
+musicdir: /home/pi/RetroPie/roms/music
 
 # Whether the music should restart upon unpausing or resume
 # from where it was left out.
-restart: true
+restart: false
 startsong:
 
 # The main process. Upon starting this process, the music will start playing...
