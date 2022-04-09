@@ -121,28 +121,28 @@ def create_default_music_folder():
     print("Creating the default music folder...", end="")
     DEFAULT_MUSIC_FOLDER.mkdir(parents=True, exist_ok=True)
 
-    music_folder_file = Path(DEFAULT_MUSIC_FOLDER, "PLACE_YOUR_MUSIC_HERE")
-    if not music_folder_file.exists():
-        music_folder_file.write_text("Place your music files in this directory (.ogg and .mp3 supported)")
+#    music_folder_file = Path(DEFAULT_MUSIC_FOLDER, "PLACE_YOUR_MUSIC_HERE")
+#    if not music_folder_file.exists():
+#        music_folder_file.write_text("Place your music files in this directory (.ogg and .mp3 supported)")
 
     print("OK")
 
 
 DEFAULT_MENU_OPTIONS_FOLDER = Path(os.path.expanduser("~/RetroPie/retropiemenu/"))
-DISABLE_BACKGROUND_MUSIC = Path(DEFAULT_MENU_OPTIONS_FOLDER, "Disable background music.sh")
-ENABLE_BACKGROUND_MUSIC = Path(DEFAULT_MENU_OPTIONS_FOLDER, "Enable background music.sh")
+#DISABLE_BACKGROUND_MUSIC = Path(DEFAULT_MENU_OPTIONS_FOLDER, "Disable background music.sh")
+#ENABLE_BACKGROUND_MUSIC = Path(DEFAULT_MENU_OPTIONS_FOLDER, "Enable background music.sh")
 
 
-def add_menu_options():
-    if DEFAULT_MENU_OPTIONS_FOLDER.exists():
-        with DISABLE_BACKGROUND_MUSIC.open("w") as fs:
-            fs.write("#/bin/bash\n")
-            fs.write("mkdir -p ~/.config/esbgm\n")
-            fs.write("touch ~/.config/esbgm/disable.flag\n")
-
-        with ENABLE_BACKGROUND_MUSIC.open("w") as fs:
-            fs.write("#/bin/bash\n")
-            fs.write("rm -f ~/.config/esbgm/disable.flag\n")
+#def add_menu_options():
+#    if DEFAULT_MENU_OPTIONS_FOLDER.exists():
+#        with DISABLE_BACKGROUND_MUSIC.open("w") as fs:
+#            fs.write("#/bin/bash\n")
+#            fs.write("mkdir -p ~/.config/esbgm\n")
+#            fs.write("touch ~/.config/esbgm/disable.flag\n")
+#
+#        with ENABLE_BACKGROUND_MUSIC.open("w") as fs:
+#            fs.write("#/bin/bash\n")
+#            fs.write("rm -f ~/.config/esbgm/disable.flag\n")
 
 
 RUNCOMMAND_HOOKS_DIR = Path("/opt/retropie/configs/all")
