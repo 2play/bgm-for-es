@@ -238,7 +238,7 @@ class Installer:
         print("Installing esbgm...")
 
         install_from_pip(prerelease)
-        add_menu_options()
+    #    add_menu_options()
         add_runcommand_hooks()
         add_autostart_script()
         create_default_music_folder()
