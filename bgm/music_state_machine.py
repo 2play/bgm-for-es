@@ -177,7 +177,8 @@ class MusicStateMachine:
 
     def _wait_splash_screen(self) -> None:
         # Look for OMXplayer - if it's running, someone's got a splash screen going!
-        while self._process_service.process_is_running("omxplayer") or self._process_service.process_is_running(
+        while self._process_service.process_is_running("mpv") or self._process_service.process_is_running(
+            "omxplayer" or self._process_service.process_is_running(
             "omxplayer.bin"
         ):
             time.sleep(1)
