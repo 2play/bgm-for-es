@@ -25,6 +25,7 @@ is running) and run the following commands:
 
 ```
 curl -sSL https://raw.githubusercontent.com/2play/bgm-for-es/playboxv2/scripts/install-esbgm.py | python3 -
+sed -i 's|~/RetroPie/music|~/RetroPie/roms/music|g' /home/pi/.local/lib/python3.7/site-packages/bgm/config_default.yaml
 ```
 
 After installing, reboot the machine:
